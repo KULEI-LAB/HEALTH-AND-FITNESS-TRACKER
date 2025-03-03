@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="icon" href="/frontend/images/icon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/analytics.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        .user-avatar-wrapper {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .user-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar-wrapper">
+                    <div class="user-avatar">
+                        <img src="/frontend/images/profile-pic.png" alt="User Avatar">
+                    </div>
+                    <span class="status-indicator"></span>
+                </div>
+                <h3 class="user-name">Loading...</h3>
+                <p class="user-status"> Member</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goals.html">
+                        <span class="icon">🎯</span>
+                        <span>Goals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="food-logging.html">
+                        <span class="icon">🍎</span>
+                        <span>Food Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="water-logging.html">
+                        <span class="icon">💧</span>
+                        <span>Water Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="activity-logging.html">
+                        <span class="icon">🏃‍♂️</span>
+                        <span>Activity Log</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="analytics.html">
+                        <span class="icon">📈</span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="analytics-header">
+                <div class="header-content">
+                    <h1>Analytics Dashboard</h1>
+                    
+                </div>
+            </header>
+
+            <div class="analytics-grid">
+                <!-- Calorie Analysis -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Calorie Analysis</h3>
+                        <div class="chart-controls">
+                            <select id="calorieMetric">
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly Average</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="calorieChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Macronutrient Distribution -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Macronutrient Distribution</h3>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="macroChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Activity Trends -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Activity Trends</h3>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Progress Summary -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Progress Summary</h3>
+                    </div>
+                    <div class="summary-content">
+                        <div class="summary-card">
+                            <h4>Average Daily Calories</h4>
+                            <p class="summary-value">2,100</p>
+                            <p class="trend positive">↑ 5% vs last week</p>
+                        </div>
+                        <div class="summary-card">
+                            <h4>Activity Duration</h4>
+                            <p class="summary-value">45 mins</p>
+                            <p class="trend negative">↓ 10% vs last week</p>
+                        </div>
+                        <div class="summary-card">
+                            <h4>Goal Completion</h4>
+                            <p class="summary-value">85%</p>
+                            <p class="trend positive">↑ 15% vs last week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/analytics.js"></script>
+</body>
+</html>

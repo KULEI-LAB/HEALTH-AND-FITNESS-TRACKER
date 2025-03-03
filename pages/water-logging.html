@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Logging</title>
+    <link rel="icon" href="/frontend/images/icon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/water-logging.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <style>
+        .user-avatar-wrapper {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .user-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    border-radius: 12px;
+    transition: width 0.3s ease;
+    width: 0%;
+    margin-top: -0%;
+    
+}
+
+#add-water-btn{
+    background-color: #3b82f6;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+#cancel-water-btn{
+    background-color: #dadada;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#log-water-btn{
+    background-color: #2aa804;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar-wrapper">
+                    <div class="user-avatar">
+                        <img src="/frontend/images/profile-pic.png" alt="User Avatar">
+                    </div>
+                    <span class="status-indicator"></span>
+                </div>
+                <h3 class="user-name">Loading...</h3>
+                <p class="user-status"> Member</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goals.html">
+                        <span class="icon">🎯</span>
+                        <span>Goals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="food-logging.html">
+                        <span class="icon">🍎</span>
+                        <span>Food Log</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="water-logging.html">
+                        <span class="icon">💧</span>
+                        <span>Water Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="activity-logging.html">
+                        <span class="icon">🏃‍♂️</span>
+                        <span>Activity Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <span class="icon">📈</span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div class="greeting-section">
+                        <h1>Water Logging</h1>
+                        <p class="date">Loading...</p>
+                    </div>
+                    <div class="header-actions">
+                        <div class="sidebar-footer">
+                            <button id="logout-btn" class="logout-btn">
+                                <span class="icon">🚪</span>
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-card water-today">
+                    <div class="stat-header">
+                        <span class="stat-icon">💧</span>
+                        <h3>Today's Intake</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"><span id="current-water">0</span>ml</div>
+                    </div>
+                </div>
+                <div class="stat-card water-goal">
+                    <div class="stat-header">
+                        <span class="stat-icon">🎯</span>
+                        <h3>Daily Goal</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"><span id="water-goal">0</span>ml</div>
+                    </div>
+                </div>
+                <div class="stat-card water-remaining">
+                    <div class="stat-header">
+                        <span class="stat-icon">⏳</span>
+                        <h3>Remaining</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"><span id="water-remaining">0</span>ml</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Water Progress -->
+            <div class="water-progress-section">
+                <div class="progress-container">
+                    <div id="water-progress-bar" class="progress-bar"></div>
+                </div>
+                <p id="progress-text" class="progress-text">0% of daily goal</p>
+            </div>
+
+            <!-- Water Logging Form -->
+            <div class="water-logging-section">
+                <div class="section-header">
+                    <h2>Log Water Intake</h2>
+                    <button id="add-water-btn" class="primary-btn">
+                        <span class="icon">💧</span> Add Water
+                    </button>
+                </div>
+                <form id="water-logging-form" class="logging-form hidden">
+                    <div class="form-group">
+                        <label for="water-amount">Amount (ml)</label>
+                        <input type="number" id="water-amount" name="waterAmount" required 
+                               min="1" step="1" placeholder="Enter amount in milliliters">
+                        <div class="quick-amounts">
+                            <button type="button" class="quick-amount" data-amount="250">Cup (250ml)</button>
+                            <button type="button" class="quick-amount" data-amount="500">Bottle (500ml)</button>
+                            <button type="button" class="quick-amount" data-amount="1000">Large Bottle (1L)</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="water-notes">Notes (optional)</label>
+                        <input type="text" id="water-notes" name="notes" 
+                               placeholder="Add notes (e.g., 'Morning hydration')">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" id="log-water-btn" class="primary-btn">Log Water</button>
+                        <button type="button" id="cancel-water-btn" class="secondary-btn">Cancel</button>
+                    </div>
+                </form>
+
+                <!-- Water Intake History -->
+                <div class="water-logs-section">
+                    <h2>Today's Water Intake</h2>
+                    <div id="water-logs-list" class="water-logs-list">
+                        <!-- Water logs will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Water Intake Tips -->
+            <div class="water-tips-section">
+                <h2>Hydration Tips</h2>
+                <div class="tips-container">
+                    <div class="tip-card">
+                        <span class="tip-icon">💡</span>
+                        <p>Start your day with a glass of water to boost metabolism</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-icon">⏰</span>
+                        <p>Set reminders to drink water every 2 hours</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-icon">🏃‍♂️</span>
+                        <p>Increase intake during exercise or hot weather</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/water-logging.js"></script>
+</body>
+</html>

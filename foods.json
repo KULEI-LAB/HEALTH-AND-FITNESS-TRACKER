@@ -1,0 +1,1012 @@
+[
+    {
+      "name": "Ugali (Maize Meal)",
+      "calories": 110,
+      "proteins": 2.5,
+      "carbohydrates": 23,
+      "fats": 0.8,
+      "vitamins": ["B1", "B3"]
+    },
+    {
+      "name": "Sukuma Wiki (Collard Greens)",
+      "calories": 33,
+      "proteins": 2.8,
+      "carbohydrates": 5.4,
+      "fats": 0.6,
+      "vitamins": ["A", "C", "K"]
+    },
+    {
+      "name": "Nyama Choma (Grilled Meat - Beef)",
+      "calories": 250,
+      "proteins": 26,
+      "carbohydrates": 0,
+      "fats": 17,
+      "vitamins": ["B12", "B6"]
+    },
+    {
+      "name": "Githeri (Maize and Beans Mix)",
+      "calories": 150,
+      "proteins": 5.8,
+      "carbohydrates": 28.2,
+      "fats": 1.2,
+      "vitamins": ["B1", "B3"]
+    },
+    {
+      "name": "Chapati",
+      "calories": 297,
+      "proteins": 7.6,
+      "carbohydrates": 49,
+      "fats": 8.1,
+      "vitamins": ["B1", "B3", "Iron"]
+    },
+    {
+      "name": "Mandazi",
+      "calories": 320,
+      "proteins": 6,
+      "carbohydrates": 50,
+      "fats": 10,
+      "vitamins": []
+    },
+    {
+      "name": "Rice (White)",
+      "calories": 130,
+      "proteins": 2.7,
+      "carbohydrates": 28.2,
+      "fats": 0.3,
+      "vitamins": ["B1", "B3"]
+    },
+    {
+      "name": "Fish (Tilapia - Grilled)",
+      "calories": 128,
+      "proteins": 26,
+      "carbohydrates": 0,
+      "fats": 2.7,
+      "vitamins": ["D", "B12", "B6"]
+    },
+    {
+      "name": "Sweet Potatoes",
+      "calories": 86,
+      "proteins": 1.6,
+      "carbohydrates": 20.1,
+      "fats": 0.1,
+      "vitamins": ["A", "C"]
+    },
+    {
+      "name": "Milk (Whole)",
+      "calories": 61,
+      "proteins": 3.3,
+      "carbohydrates": 4.7,
+      "fats": 3.4,
+      "vitamins": ["A", "D", "B2", "B12"]
+    },
+    {
+      "name": "Matoke (Green Bananas - Boiled)",
+      "calories": 122,
+      "proteins": 1.2,
+      "carbohydrates": 31.8,
+      "fats": 0.2,
+      "vitamins": ["C", "B6"]
+    },
+    {
+      "name": "Groundnuts (Roasted)",
+      "calories": 567,
+      "proteins": 25,
+      "carbohydrates": 16,
+      "fats": 49,
+      "vitamins": ["E", "B3"]
+    },
+    {
+      "name": "Pumpkin",
+      "calories": 26,
+      "proteins": 1,
+      "carbohydrates": 6.5,
+      "fats": 0.1,
+      "vitamins": ["A", "C"]
+    },
+    {
+      "name": "Kachumbari (Tomato & Onion Salad)",
+      "calories": 25,
+      "proteins": 1,
+      "carbohydrates": 5.8,
+      "fats": 0.2,
+      "vitamins": ["C", "A"]
+    },
+    {
+      "name": "Coconut Milk",
+      "calories": 230,
+      "proteins": 2.3,
+      "carbohydrates": 5.5,
+      "fats": 24,
+      "vitamins": ["C", "E"]
+    },
+    
+        {
+          "name": "Ugali (Maize Meal)",
+          "calories": 110,
+          "proteins": 2.5,
+          "carbohydrates": 23,
+          "fats": 0.8,
+          "vitamins": ["B1", "B3"]
+        },
+        {
+          "name": "Sukuma Wiki (Collard Greens)",
+          "calories": 33,
+          "proteins": 2.8,
+          "carbohydrates": 5.4,
+          "fats": 0.6,
+          "vitamins": ["A", "C", "K"]
+        },
+        {
+          "name": "Nyama Choma (Grilled Meat - Goat)",
+          "calories": 200,
+          "proteins": 23,
+          "carbohydrates": 0,
+          "fats": 12,
+          "vitamins": ["B6", "B12"]
+        },
+        {
+          "name": "Githeri (Maize and Beans Mix)",
+          "calories": 150,
+          "proteins": 5.8,
+          "carbohydrates": 28.2,
+          "fats": 1.2,
+          "vitamins": ["B1", "B3", "Folate"]
+        },
+        {
+          "name": "Chapati (Wheat Flatbread)",
+          "calories": 297,
+          "proteins": 7.6,
+          "carbohydrates": 49,
+          "fats": 8.1,
+          "vitamins": ["B1", "B3", "Iron"]
+        },
+        {
+          "name": "Mandazi (Fried Dough)",
+          "calories": 320,
+          "proteins": 6,
+          "carbohydrates": 50,
+          "fats": 10,
+          "vitamins": []
+        },
+        {
+          "name": "Mukimo (Mashed Potatoes and Vegetables)",
+          "calories": 124,
+          "proteins": 2.3,
+          "carbohydrates": 28,
+          "fats": 0.5,
+          "vitamins": ["A", "C"]
+        },
+        {
+          "name": "Matoke (Green Bananas - Steamed)",
+          "calories": 122,
+          "proteins": 1.2,
+          "carbohydrates": 31.8,
+          "fats": 0.2,
+          "vitamins": ["C", "B6"]
+        },
+        {
+          "name": "Fish (Nile Perch - Grilled)",
+          "calories": 142,
+          "proteins": 24,
+          "carbohydrates": 0,
+          "fats": 4.5,
+          "vitamins": ["D", "B6", "B12"]
+        },
+        {
+          "name": "Sweet Potatoes",
+          "calories": 86,
+          "proteins": 1.6,
+          "carbohydrates": 20.1,
+          "fats": 0.1,
+          "vitamins": ["A", "C"]
+        },
+        {
+          "name": "Milk (Whole)",
+          "calories": 61,
+          "proteins": 3.3,
+          "carbohydrates": 4.7,
+          "fats": 3.4,
+          "vitamins": ["A", "D", "B2", "B12"]
+        },
+        {
+          "name": "Rice (White)",
+          "calories": 130,
+          "proteins": 2.7,
+          "carbohydrates": 28.2,
+          "fats": 0.3,
+          "vitamins": ["B1", "B3"]
+        },
+        {
+          "name": "Arrowroots (Nduma)",
+          "calories": 98,
+          "proteins": 2,
+          "carbohydrates": 23.7,
+          "fats": 0.1,
+          "vitamins": ["C", "E", "Folate"]
+        },
+        {
+          "name": "Groundnuts (Roasted)",
+          "calories": 567,
+          "proteins": 25,
+          "carbohydrates": 16,
+          "fats": 49,
+          "vitamins": ["E", "B3"]
+        },
+        {
+          "name": "Pumpkin",
+          "calories": 26,
+          "proteins": 1,
+          "carbohydrates": 6.5,
+          "fats": 0.1,
+          "vitamins": ["A", "C"]
+        },
+        {
+          "name": "Kachumbari (Tomato & Onion Salad)",
+          "calories": 25,
+          "proteins": 1,
+          "carbohydrates": 5.8,
+          "fats": 0.2,
+          "vitamins": ["C", "A"]
+        },
+        {
+          "name": "Coconut Milk",
+          "calories": 230,
+          "proteins": 2.3,
+          "carbohydrates": 5.5,
+          "fats": 24,
+          "vitamins": ["C", "E"]
+        },
+        {
+          "name": "Muthokoi (Dehulled Maize and Beans)",
+          "calories": 130,
+          "proteins": 7,
+          "carbohydrates": 24,
+          "fats": 1.3,
+          "vitamins": ["B1", "B3", "Folate"]
+        },
+        {
+          "name": "Tilapia (Fried)",
+          "calories": 195,
+          "proteins": 22,
+          "carbohydrates": 0,
+          "fats": 11,
+          "vitamins": ["D", "B6", "B12"]
+        },
+        {
+          "name": "Cabbage (Cooked)",
+          "calories": 23,
+          "proteins": 1.3,
+          "carbohydrates": 5.2,
+          "fats": 0.1,
+          "vitamins": ["A", "C", "K"]
+        },
+        {
+          "name": "Tea (with Milk and Sugar)",
+          "calories": 60,
+          "proteins": 1,
+          "carbohydrates": 10.5,
+          "fats": 1.5,
+          "vitamins": ["D", "B2"]
+        },
+
+        
+            {
+              "name": "Cassava (Boiled)",
+              "calories": 112,
+              "proteins": 1.4,
+              "carbohydrates": 27,
+              "fats": 0.3,
+              "vitamins": ["C"]
+            },
+            {
+              "name": "Beans (Red Kidney, Boiled)",
+              "calories": 127,
+              "proteins": 8.7,
+              "carbohydrates": 22.8,
+              "fats": 0.5,
+              "vitamins": ["B1", "Folate"]
+            },
+            {
+              "name": "Lentils (Boiled)",
+              "calories": 116,
+              "proteins": 9,
+              "carbohydrates": 20.1,
+              "fats": 0.4,
+              "vitamins": ["B1", "Iron", "Folate"]
+            },
+            {
+              "name": "Boiled Eggs",
+              "calories": 155,
+              "proteins": 13,
+              "carbohydrates": 1.1,
+              "fats": 11,
+              "vitamins": ["A", "D", "B2", "B12"]
+            },
+            {
+              "name": "Spinach (Cooked)",
+              "calories": 23,
+              "proteins": 2.9,
+              "carbohydrates": 3.6,
+              "fats": 0.4,
+              "vitamins": ["A", "C", "K", "Folate"]
+            },
+            {
+              "name": "Potatoes (Irish, Boiled)",
+              "calories": 86,
+              "proteins": 2,
+              "carbohydrates": 20.1,
+              "fats": 0.1,
+              "vitamins": ["C", "B6"]
+            },
+            {
+              "name": "Goat Meat (Stewed)",
+              "calories": 143,
+              "proteins": 27,
+              "carbohydrates": 0,
+              "fats": 4.5,
+              "vitamins": ["B12", "Iron"]
+            },
+            {
+              "name": "Tilapia (Fried)",
+              "calories": 195,
+              "proteins": 22,
+              "carbohydrates": 0,
+              "fats": 11,
+              "vitamins": ["D", "B6", "B12"]
+            },
+            {
+              "name": "Maize (Boiled)",
+              "calories": 101,
+              "proteins": 3.5,
+              "carbohydrates": 22,
+              "fats": 1.5,
+              "vitamins": ["B1", "B6"]
+            },
+            {
+              "name": "Yams (Boiled)",
+              "calories": 116,
+              "proteins": 1.5,
+              "carbohydrates": 27.6,
+              "fats": 0.2,
+              "vitamins": ["C", "B6"]
+            },
+            {
+              "name": "Peanuts (Raw)",
+              "calories": 567,
+              "proteins": 25,
+              "carbohydrates": 16,
+              "fats": 49,
+              "vitamins": ["E", "B3"]
+            },
+            {
+              "name": "Onions (Raw)",
+              "calories": 40,
+              "proteins": 1.1,
+              "carbohydrates": 9.3,
+              "fats": 0.1,
+              "vitamins": ["C", "B6"]
+            },
+            {
+              "name": "Tomatoes (Raw)",
+              "calories": 18,
+              "proteins": 0.9,
+              "carbohydrates": 3.9,
+              "fats": 0.2,
+              "vitamins": ["C", "A", "K"]
+            },
+            {
+              "name": "Cabbage (Raw)",
+              "calories": 25,
+              "proteins": 1.3,
+              "carbohydrates": 5.8,
+              "fats": 0.1,
+              "vitamins": ["C", "K"]
+            },
+            {
+              "name": "Plantains (Boiled)",
+              "calories": 116,
+              "proteins": 1.3,
+              "carbohydrates": 31.9,
+              "fats": 0.3,
+              "vitamins": ["A", "C", "B6"]
+            },
+            {
+              "name": "Pumpkin Seeds (Roasted)",
+              "calories": 574,
+              "proteins": 29,
+              "carbohydrates": 14,
+              "fats": 49,
+              "vitamins": ["E", "Iron", "Zinc"]
+            },
+            {
+              "name": "Avocado",
+              "calories": 160,
+              "proteins": 2,
+              "carbohydrates": 8.5,
+              "fats": 14.7,
+              "vitamins": ["E", "K", "C", "B6"]
+            },
+            {
+              "name": "Green Grams (Boiled)",
+              "calories": 115,
+              "proteins": 8.5,
+              "carbohydrates": 19.2,
+              "fats": 0.5,
+              "vitamins": ["B1", "Iron"]
+            },
+            {
+              "name": "Black Tea (with Sugar)",
+              "calories": 20,
+              "proteins": 0,
+              "carbohydrates": 5,
+              "fats": 0,
+              "vitamins": []
+            },
+            {
+              "name": "Ugali (Finger Millet)",
+              "calories": 110,
+              "proteins": 3,
+              "carbohydrates": 24,
+              "fats": 0.5,
+              "vitamins": ["B2", "Iron"]
+            },
+            {
+              "name": "Carrots (Cooked)",
+              "calories": 35,
+              "proteins": 0.8,
+              "carbohydrates": 8.2,
+              "fats": 0.2,
+              "vitamins": ["A", "K"]
+            },
+            {
+              "name": "Pineapple",
+              "calories": 50,
+              "proteins": 0.5,
+              "carbohydrates": 13.1,
+              "fats": 0.1,
+              "vitamins": ["C", "B6"]
+            },
+
+    
+                {
+                  "name": "Mutura (Kenyan Sausage)",
+                  "calories": 230,
+                  "proteins": 15,
+                  "carbohydrates": 3,
+                  "fats": 18,
+                  "vitamins": ["B12", "Iron"]
+                },
+                {
+                  "name": "Uji (Fermented Millet and Sorghum Porridge)",
+                  "calories": 100,
+                  "proteins": 3,
+                  "carbohydrates": 20,
+                  "fats": 1.5,
+                  "vitamins": ["B1", "B3"]
+                },
+                {
+                  "name": "Njahi (Black Beans - Boiled)",
+                  "calories": 105,
+                  "proteins": 7.6,
+                  "carbohydrates": 20.7,
+                  "fats": 0.5,
+                  "vitamins": ["Iron", "Folate"]
+                },
+                {
+                  "name": "Arrowroot Leaves (Cooked)",
+                  "calories": 35,
+                  "proteins": 2.7,
+                  "carbohydrates": 7,
+                  "fats": 0.3,
+                  "vitamins": ["A", "C", "Iron"]
+                },
+                {
+                  "name": "Kenyan Peanuts Soup",
+                  "calories": 250,
+                  "proteins": 8,
+                  "carbohydrates": 16,
+                  "fats": 18,
+                  "vitamins": ["E", "Iron"]
+                },
+                {
+                  "name": "Sorghum (Boiled)",
+                  "calories": 120,
+                  "proteins": 3.3,
+                  "carbohydrates": 27,
+                  "fats": 1.2,
+                  "vitamins": ["B1", "B2"]
+                },
+                {
+                  "name": "Passion Fruit",
+                  "calories": 97,
+                  "proteins": 2.2,
+                  "carbohydrates": 23,
+                  "fats": 0.7,
+                  "vitamins": ["A", "C"]
+                },
+                {
+                  "name": "Mango (Raw)",
+                  "calories": 60,
+                  "proteins": 0.8,
+                  "carbohydrates": 15,
+                  "fats": 0.4,
+                  "vitamins": ["A", "C"]
+                },
+                {
+                  "name": "Goat Milk",
+                  "calories": 69,
+                  "proteins": 3.5,
+                  "carbohydrates": 4.5,
+                  "fats": 4.1,
+                  "vitamins": ["A", "D"]
+                },
+                {
+                  "name": "Pear (Raw)",
+                  "calories": 57,
+                  "proteins": 0.4,
+                  "carbohydrates": 15.2,
+                  "fats": 0.1,
+                  "vitamins": ["C", "K"]
+                },
+                {
+                  "name": "Papaya (Pawpaw)",
+                  "calories": 43,
+                  "proteins": 0.5,
+                  "carbohydrates": 11,
+                  "fats": 0.3,
+                  "vitamins": ["A", "C", "E"]
+                },
+                {
+                  "name": "Chevda (Kenyan Spiced Snack)",
+                  "calories": 540,
+                  "proteins": 8,
+                  "carbohydrates": 60,
+                  "fats": 30,
+                  "vitamins": []
+                },
+                {
+                  "name": "Honey (Pure)",
+                  "calories": 304,
+                  "proteins": 0.3,
+                  "carbohydrates": 82.4,
+                  "fats": 0,
+                  "vitamins": ["B2", "B6"]
+                },
+                {
+                  "name": "Black Eyed Peas (Boiled)",
+                  "calories": 122,
+                  "proteins": 7.7,
+                  "carbohydrates": 20.8,
+                  "fats": 0.4,
+                  "vitamins": ["Iron", "B1"]
+                },
+                {
+                  "name": "Tilapia Soup",
+                  "calories": 70,
+                  "proteins": 10,
+                  "carbohydrates": 1,
+                  "fats": 2.5,
+                  "vitamins": ["D", "B12"]
+                },
+                {
+                  "name": "Matumbo (Tripe Stew)",
+                  "calories": 94,
+                  "proteins": 12.1,
+                  "carbohydrates": 1,
+                  "fats": 4.1,
+                  "vitamins": ["B12", "Zinc"]
+                },
+                {
+                  "name": "Boiled Green Maize",
+                  "calories": 101,
+                  "proteins": 3.5,
+                  "carbohydrates": 22.2,
+                  "fats": 1.6,
+                  "vitamins": ["B1", "B6"]
+                },
+                {
+                  "name": "Pilau (Spiced Rice)",
+                  "calories": 180,
+                  "proteins": 4.2,
+                  "carbohydrates": 31.5,
+                  "fats": 3.2,
+                  "vitamins": ["B1", "B3"]
+                },
+                {
+                  "name": "Roasted Peas",
+                  "calories": 147,
+                  "proteins": 9,
+                  "carbohydrates": 25.1,
+                  "fats": 1,
+                  "vitamins": ["A", "C"]
+                },
+                {
+                  "name": "Ripe Bananas",
+                  "calories": 89,
+                  "proteins": 1.1,
+                  "carbohydrates": 22.8,
+                  "fats": 0.3,
+                  "vitamins": ["B6", "C"]
+                },
+                {
+                  "name": "Pigeon Peas (Nzuu, Boiled)",
+                  "calories": 120,
+                  "proteins": 7.2,
+                  "carbohydrates": 21.7,
+                  "fats": 0.6,
+                  "vitamins": ["Iron", "Folate"]
+                },
+                {
+                  "name": "Kericho Gold Tea (with Milk)",
+                  "calories": 60,
+                  "proteins": 3,
+                  "carbohydrates": 5,
+                  "fats": 3,
+                  "vitamins": ["D"]
+                },
+                {
+                  "name": "Kenyan Potatoes (Wedges - Fried)",
+                  "calories": 319,
+                  "proteins": 4,
+                  "carbohydrates": 41.8,
+                  "fats": 15,
+                  "vitamins": ["C", "B6"]
+                },
+
+                
+                    {
+                      "name": "Githeri (Maize and Beans)",
+                      "calories": 170,
+                      "proteins": 7.3,
+                      "carbohydrates": 31.2,
+                      "fats": 1.5,
+                      "vitamins": ["B1", "Iron"]
+                    },
+                    {
+                      "name": "Kunde (Cowpea Leaves, Cooked)",
+                      "calories": 40,
+                      "proteins": 3.5,
+                      "carbohydrates": 7,
+                      "fats": 0.6,
+                      "vitamins": ["A", "C", "Iron"]
+                    },
+                    {
+                      "name": "Tilapia (Grilled)",
+                      "calories": 128,
+                      "proteins": 26,
+                      "carbohydrates": 0,
+                      "fats": 2.7,
+                      "vitamins": ["B12", "Phosphorus"]
+                    },
+                    {
+                      "name": "Mala (Fermented Milk)",
+                      "calories": 56,
+                      "proteins": 3.5,
+                      "carbohydrates": 4,
+                      "fats": 2.5,
+                      "vitamins": ["B2", "Calcium"]
+                    },
+                    {
+                      "name": "Omena (Small Fish - Fried)",
+                      "calories": 210,
+                      "proteins": 25,
+                      "carbohydrates": 0,
+                      "fats": 12,
+                      "vitamins": ["D", "Calcium"]
+                    },
+                    {
+                      "name": "Chapati (Kenyan Flatbread)",
+                      "calories": 297,
+                      "proteins": 8.1,
+                      "carbohydrates": 47,
+                      "fats": 9.8,
+                      "vitamins": ["B1", "Folate"]
+                    },
+                    {
+                      "name": "Mandazi (Kenyan Doughnut)",
+                      "calories": 310,
+                      "proteins": 5,
+                      "carbohydrates": 47,
+                      "fats": 12,
+                      "vitamins": ["B1"]
+                    },
+                    {
+                      "name": "Macadamia Nuts",
+                      "calories": 718,
+                      "proteins": 8,
+                      "carbohydrates": 14,
+                      "fats": 76,
+                      "vitamins": ["B1", "Magnesium"]
+                    },
+                    {
+                      "name": "Kenyan Pumpkin (Boiled)",
+                      "calories": 26,
+                      "proteins": 1,
+                      "carbohydrates": 6.5,
+                      "fats": 0.1,
+                      "vitamins": ["A", "C"]
+                    },
+                    {
+                      "name": "Sweet Potato Leaves (Cooked)",
+                      "calories": 35,
+                      "proteins": 2.5,
+                      "carbohydrates": 7,
+                      "fats": 0.6,
+                      "vitamins": ["A", "C"]
+                    },
+                    {
+                      "name": "Avocado Salad",
+                      "calories": 150,
+                      "proteins": 2,
+                      "carbohydrates": 10,
+                      "fats": 12,
+                      "vitamins": ["E", "K"]
+                    },
+                    {
+                      "name": "Matoke (Green Bananas - Stewed)",
+                      "calories": 108,
+                      "proteins": 1.2,
+                      "carbohydrates": 27,
+                      "fats": 0.2,
+                      "vitamins": ["B6", "C"]
+                    },
+                    {
+                      "name": "Roasted Cassava Chips",
+                      "calories": 180,
+                      "proteins": 1.2,
+                      "carbohydrates": 40,
+                      "fats": 0.3,
+                      "vitamins": ["C"]
+                    },
+                    {
+                      "name": "Boiled Arrowroot",
+                      "calories": 150,
+                      "proteins": 1.9,
+                      "carbohydrates": 33.8,
+                      "fats": 0.2,
+                      "vitamins": ["C"]
+                    },
+                    {
+                      "name": "Samosa (Beef Filling)",
+                      "calories": 260,
+                      "proteins": 12,
+                      "carbohydrates": 20,
+                      "fats": 16,
+                      "vitamins": ["Iron"]
+                    },
+                    {
+                      "name": "Rice Porridge",
+                      "calories": 80,
+                      "proteins": 1.2,
+                      "carbohydrates": 17,
+                      "fats": 0.2,
+                      "vitamins": ["B1"]
+                    },
+                    {
+                      "name": "Sukumawiki (Cooked Kale)",
+                      "calories": 33,
+                      "proteins": 2.9,
+                      "carbohydrates": 6,
+                      "fats": 0.3,
+                      "vitamins": ["A", "C", "K"]
+                    },
+                    {
+                      "name": "Goat Liver (Fried)",
+                      "calories": 200,
+                      "proteins": 28,
+                      "carbohydrates": 2,
+                      "fats": 8,
+                      "vitamins": ["A", "Iron"]
+                    },
+                    {
+                      "name": "Mutura Soup",
+                      "calories": 100,
+                      "proteins": 12,
+                      "carbohydrates": 1,
+                      "fats": 4,
+                      "vitamins": ["B12", "Iron"]
+                    },
+                    {
+                      "name": "Roasted Yams",
+                      "calories": 118,
+                      "proteins": 1.5,
+                      "carbohydrates": 27,
+                      "fats": 0.2,
+                      "vitamins": ["C", "B6"]
+                    },
+
+                    
+                        {
+                          "name": "Boiled White Maize",
+                          "calories": 86,
+                          "proteins": 3.2,
+                          "carbohydrates": 19,
+                          "fats": 0.8,
+                          "vitamins": ["B3", "Folate"]
+                        },
+                        {
+                          "name": "Green Grams (Stewed)",
+                          "calories": 117,
+                          "proteins": 8,
+                          "carbohydrates": 19.2,
+                          "fats": 0.6,
+                          "vitamins": ["Iron", "B9"]
+                        },
+                        {
+                          "name": "Pumpkin Seeds (Roasted)",
+                          "calories": 151,
+                          "proteins": 7,
+                          "carbohydrates": 5,
+                          "fats": 13,
+                          "vitamins": ["E", "Magnesium"]
+                        },
+                        {
+                          "name": "Ekwang'o (Fermented Finger Millet)",
+                          "calories": 95,
+                          "proteins": 2.8,
+                          "carbohydrates": 20.3,
+                          "fats": 0.4,
+                          "vitamins": ["Iron", "Calcium"]
+                        },
+                        {
+                          "name": "Fish Curry",
+                          "calories": 160,
+                          "proteins": 20,
+                          "carbohydrates": 5,
+                          "fats": 6,
+                          "vitamins": ["B12", "Omega-3"]
+                        },
+                        {
+                          "name": "Mahamri (Kenyan Sweet Bread)",
+                          "calories": 322,
+                          "proteins": 6,
+                          "carbohydrates": 45,
+                          "fats": 15,
+                          "vitamins": ["B2", "B6"]
+                        },
+                        {
+                          "name": "Kuku Paka (Chicken in Coconut Curry)",
+                          "calories": 250,
+                          "proteins": 25,
+                          "carbohydrates": 8,
+                          "fats": 12,
+                          "vitamins": ["B3", "Iron"]
+                        },
+                        {
+                          "name": "Fried Breadfruit",
+                          "calories": 200,
+                          "proteins": 1.5,
+                          "carbohydrates": 36,
+                          "fats": 6.5,
+                          "vitamins": ["C", "Potassium"]
+                        },
+                        {
+                          "name": "Milk Tea (Chai)",
+                          "calories": 70,
+                          "proteins": 3.4,
+                          "carbohydrates": 5.6,
+                          "fats": 2.8,
+                          "vitamins": ["Calcium", "D"]
+                        },
+                        {
+                          "name": "Traditional Fermented Milk (Mursik)",
+                          "calories": 120,
+                          "proteins": 4.5,
+                          "carbohydrates": 6,
+                          "fats": 8,
+                          "vitamins": ["Probiotics", "Calcium"]
+                        },
+                        {
+                          "name": "Chia Porridge",
+                          "calories": 180,
+                          "proteins": 5,
+                          "carbohydrates": 12,
+                          "fats": 8,
+                          "vitamins": ["Iron", "Omega-3"]
+                        },
+                        {
+                          "name": "Plantain Chips (Fried)",
+                          "calories": 315,
+                          "proteins": 1.9,
+                          "carbohydrates": 40,
+                          "fats": 16,
+                          "vitamins": ["A", "C"]
+                        },
+                        {
+                          "name": "Mutheri (Boiled Green Grams and Maize)",
+                          "calories": 180,
+                          "proteins": 8.5,
+                          "carbohydrates": 28,
+                          "fats": 2,
+                          "vitamins": ["Folate", "Iron"]
+                        },
+                        {
+                          "name": "Pineapple (Raw)",
+                          "calories": 50,
+                          "proteins": 0.5,
+                          "carbohydrates": 13,
+                          "fats": 0.1,
+                          "vitamins": ["C", "B6"]
+                        },
+                        {
+                          "name": "Kenyan Beef Stew",
+                          "calories": 190,
+                          "proteins": 18,
+                          "carbohydrates": 5,
+                          "fats": 10,
+                          "vitamins": ["B12", "Iron"]
+                        },
+                        {
+                          "name": "Wimbi (Finger Millet Porridge)",
+                          "calories": 110,
+                          "proteins": 3.5,
+                          "carbohydrates": 22,
+                          "fats": 1,
+                          "vitamins": ["B2", "Iron"]
+                        },
+                        {
+                          "name": "Boiled Sweet Corn",
+                          "calories": 98,
+                          "proteins": 3.4,
+                          "carbohydrates": 21,
+                          "fats": 1.5,
+                          "vitamins": ["B1", "B3"]
+                        },
+                        {
+                          "name": "Sesame Seeds",
+                          "calories": 160,
+                          "proteins": 5,
+                          "carbohydrates": 7,
+                          "fats": 14,
+                          "vitamins": ["Calcium", "Iron"]
+                        },
+                        {
+                          "name": "Nyama Choma (Roasted Meat)",
+                          "calories": 350,
+                          "proteins": 30,
+                          "carbohydrates": 0,
+                          "fats": 25,
+                          "vitamins": ["B12", "Zinc"]
+                        },
+                        {
+                          "name": "Tamarind Juice",
+                          "calories": 130,
+                          "proteins": 1.2,
+                          "carbohydrates": 31,
+                          "fats": 0.7,
+                          "vitamins": ["C", "Iron"]
+                        },
+                        {
+                          "name": "Kales and Carrots Stir Fry",
+                          "calories": 50,
+                          "proteins": 2.5,
+                          "carbohydrates": 8,
+                          "fats": 0.7,
+                          "vitamins": ["A", "C"]
+                        },
+                        {
+                          "name": "Muthokoi (Shelled Maize with Beans)",
+                          "calories": 220,
+                          "proteins": 8,
+                          "carbohydrates": 36,
+                          "fats": 2,
+                          "vitamins": ["Iron", "Folate"]
+                        },
+                        {
+                          "name": "Passion Fruit Juice",
+                          "calories": 80,
+                          "proteins": 1.5,
+                          "carbohydrates": 20,
+                          "fats": 0.3,
+                          "vitamins": ["A", "C"]
+                        }
+                      ]
+                      
+                  
+                  
+               
+          
+      
+
+  
+  

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Logging</title>
+    <link rel="icon" href="/frontend/images/icon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/activity-logging.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        .user-avatar-wrapper {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .user-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar (Same as dashboard) -->
+        <nav class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar-wrapper">
+                    <div class="user-avatar">
+                        <img src="/frontend/images/profile-pic.png" alt="User Avatar">
+                    </div>
+                    <span class="status-indicator"></span>
+                </div>
+                <h3 class="user-name">Loading...</h3>
+                <p class="user-status"> Member</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goals.html">
+                        <span class="icon">🎯</span>
+                        <span>Goals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="food-logging.html">
+                        <span class="icon">🍎</span>
+                        <span>Food Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="water-logging.html">
+                        <span class="icon">💧</span>
+                        <span>Water Log</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="activity-logging.html">
+                        <span class="icon">🏃‍♂️</span>
+                        <span>Activity Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <span class="icon">📈</span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <div class="header-content">
+                    <h1>Activity Logging</h1>
+                    <div class="header-actions">
+                        <div class="sidebar-footer">
+                            <button id="logout-btn" class="logout-btn">
+                                <span class="icon">🚪</span>
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Activity Logging Form -->
+            <div class="activity-form-container">
+                <form id="activity-form" class="activity-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="activity-type">Activity Type</label>
+                            <select id="activity-type" name="activity-type" required>
+                                <option value="">Select an activity</option>
+                                <option value="running">Running</option>
+                                <option value="walking">Walking</option>
+                                <option value="cycling">Cycling</option>
+                                <option value="swimming">Swimming</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="strength">Strength Training</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Duration (minutes)</label>
+                            <input type="number" id="duration" name="duration" min="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="intensity">Intensity Level</label>
+                            <select id="intensity" name="intensity" required>
+                                <option value="">Select intensity</option>
+                                <option value="low">Low</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes (optional)</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Log Activity</button>
+                </form>
+            </div>
+
+            <!-- Today's Summary -->
+            <div class="summary-container">
+                <h2>Today's Activity Summary</h2>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <span class="summary-icon">🔥</span>
+                        <div class="summary-content">
+                            <h3>Calories Burned</h3>
+                            <p id="calories-summary" class="summary-value">0</p>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="summary-card">
+                        <span class="summary-icon">⏱️</span>
+                        <div class="summary-content">
+                            <h3>Active Minutes</h3>
+                            <p id="minutes-summary" class="summary-value">0</p>
+                           
+                        </div>
+                    </div>
+            
+                    <div class="summary-card">
+                        <span class="summary-icon">🎯</span>
+                        <div class="summary-content">
+                            <h3>Activities Done</h3>
+                            <p id="activities-summary" class="summary-value">0</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activities Table -->
+            <div class="recent-activities">
+                <h2>Recent Activities</h2>
+                <div class="table-container">
+                    <table class="activities-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Activity</th>
+                                <th>Duration</th>
+                                <th>Intensity</th>
+                                <th>Calories Burned</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activities-table-body">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/activity-logging.js"></script>
+</body>
+</html>

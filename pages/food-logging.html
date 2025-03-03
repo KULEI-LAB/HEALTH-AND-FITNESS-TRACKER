@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Logging</title>
+    <link rel="icon" href="/frontend/images/icon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/food-logging.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        .user-avatar-wrapper {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .user-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar-wrapper">
+                    <div class="user-avatar">
+                        <img src="/frontend/images/profile-pic.png" alt="User Avatar">
+                    </div>
+                    <span class="status-indicator"></span>
+                </div>
+                <h3 class="user-name">Loading...</h3>
+                <p class="user-status"> Member</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goals.html">
+                        <span class="icon">🎯</span>
+                        <span>Goals</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="food-logging.html">
+                        <span class="icon">🍎</span>
+                        <span>Food Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="water-logging.html">
+                        <span class="icon">💧</span>
+                        <span>Water Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="activity-logging.html">
+                        <span class="icon">🏃‍♂️</span>
+                        <span>Activity Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <span class="icon">📈</span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div class="greeting-section">
+                        <h1>Food Logging</h1>
+                    
+                    </div>
+                    <div class="header-actions">
+                        <button id="logout-btn" class="logout-btn">
+                            <span class="icon">🚪</span>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Quick Summary -->
+            <div class="quick-stats">
+                <div class="stat-card calories">
+                    <div class="stat-header">
+                        <span class="stat-icon">🔥</span>
+                        <h3>Daily Calories</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"></div>
+                       
+                    </div>
+                </div>
+                <div class="stat-card protein">
+                    <div class="stat-header">
+                        <span class="stat-icon">🥩</span>
+                        <h3>Protein</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"></div>
+                       
+                    </div>
+                </div>
+                <div class="stat-card carbs">
+                    <div class="stat-header">
+                        <span class="stat-icon">🍚</span>
+                        <h3>Carbs</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"></div>
+                       
+                    </div>
+                </div>
+                <div class="stat-card fats">
+                    <div class="stat-header">
+                        <span class="stat-icon">🥑</span>
+                        <h3>Fats</h3>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value"></div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Logging Form -->
+            <div class="food-logging-section">
+                <div class="section-header">
+                    <h2>Log Your Meal</h2>
+                    <button id="add-meal-btn" class="primary-btn">
+                        <span class="icon">➕</span>
+                        Add Meal
+                    </button>
+                </div>
+                <form id="food-logging-form" class="logging-form hidden">
+                    <div class="form-group">
+                        <label for="meal-time">Meal Time</label>
+                        <select id="meal-time" required>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="food-description">Food Description</label>
+                        <div class="autocomplete-wrapper">
+                            <input type="text" id="food-description" placeholder="Start typing to search foods..." required>
+                            <div id="autocomplete-dropdown" class="autocomplete-dropdown hidden"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="portion-size">Portion Size</label>
+                        <input type="text" id="portion-size" placeholder="e.g., 200g" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Log Meal</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories">Calories</label>
+                        <input type="number" id="calories" placeholder="e.g., 300" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="protein">Protein (g)</label>
+                        <input type="number" id="protein" step="0.1" placeholder="e.g., 20" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carbs">Carbs (g)</label>
+                        <input type="number" id="carbs" step="0.1" placeholder="e.g., 40" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fats">Fats (g)</label>
+                        <input type="number" id="fats" step="0.1" placeholder="e.g., 10" required>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Today's Meals -->
+            <div class="meals-section">
+                <h2>Today's Meals</h2>
+                <div class="meals-container">
+                    <div class="meal-card">
+                        <div class="meal-header">
+                            <span class="meal-time">Breakfast - 8:00 AM</span>
+                            <button class="edit-btn">✏️</button>
+                        </div>
+                        <div class="meal-content">
+                            <h3>Oatmeal with Fruits</h3>
+                            <div class="meal-details">
+                                <span>Portion: 300g</span>
+                                <span>Calories: 350</span>
+                            </div>
+                            <div class="nutrient-breakdown">
+                                <div class="nutrient">
+                                    <span class="label">Protein</span>
+                                    <span class="value">12g</span>
+                                </div>
+                                <div class="nutrient">
+                                    <span class="label">Carbs</span>
+                                    <span class="value">45g</span>
+                                </div>
+                                <div class="nutrient">
+                                    <span class="label">Fats</span>
+                                    <span class="value">8g</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More meal cards here -->
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+            <div class="recommendations-section">
+                <h2>Nutritional Recommendations</h2>
+                <div class="recommendation-card">
+                    <div class="recommendation-icon">💡</div>
+                    <div class="recommendation-content">
+                        <h3>Daily Insight</h3>
+                        <p>Based on your current intake, consider adding more protein-rich foods to reach your daily goal. Good options include Greek yogurt, eggs, or lean meats.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/food-logging.js"></script>
+</body>
+</html>

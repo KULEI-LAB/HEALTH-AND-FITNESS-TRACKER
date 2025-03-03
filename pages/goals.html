@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <link rel="icon" href="/frontend/images/icon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/goals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        .user-avatar-wrapper {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .user-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        #goalTargetUnit{
+        margin-left: 98%;
+        color: rgb(5, 65, 0);
+        font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar (Same as dashboard) -->
+        <nav class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar-wrapper">
+                    <div class="user-avatar">
+                        <img src="/frontend/images/profile-pic.png" alt="User Avatar">
+                    </div>
+                    <span class="status-indicator"></span>
+                </div>
+                <h3 class="user-name">Loading...</h3>
+                <p class="user-status"> Member</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="goals.html">
+                        <span class="icon">🎯</span>
+                        <span>Goals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="food-logging.html">
+                        <span class="icon">🍎</span>
+                        <span>Food Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="water-logging.html">
+                        <span class="icon">💧</span>
+                        <span>Water Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="activity-logging.html">
+                        <span class="icon">🏃‍♂️</span>
+                        <span>Activity Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <span class="icon">📈</span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="goals-header">
+                <div class="header-content">
+                    <h1>My Goals</h1>
+                    <button class="add-goal-btn">
+                        <span class="icon">➕</span>
+                        Add New Goal
+                    </button>
+                </div>
+            </header>
+
+            <!-- Goals Categories -->
+            <div class="goals-categories">
+                <button class="category-btn active" data-period="daily">Daily Goals</button>
+                <button class="category-btn" data-period="weekly">Weekly Goals</button>
+                <button class="category-btn" data-period="yearly">Yearly Goals</button>
+            </div>
+
+            <!-- Goals Grid -->
+            <div class="goals-grid">
+               
+            </div>
+
+            <!-- Add Goal Modal -->
+            <div class="modal" id="addGoalModal">
+                <div class="modal-content">
+                    <h2>Manage Goal</h2>
+                    <form id="goalForm">
+                        <div class="form-group">
+                            <label for="goalType">Goal Type</label>
+                            <select id="goalType" required>
+                                <option value="select">select</option>
+                               
+                                <option value="calories">Calories</option>
+                                <option value="exercise">Exercise</option>
+                                <option value="water">Water Intake</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="goalTarget">Target Value</label>
+                            <input type="number" id="goalTarget" required>
+                            <span id="goalTargetUnit"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="goalPeriod">Time Period</label>
+                            <select id="goalPeriod" required>
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="yearly">Yearly</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="save-btn">Save Goal</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/goals.js"></script>
+</body>
+</html>
+
+
+
